@@ -2,7 +2,7 @@ package CustomerManagementSystem;
 
 import java.time.LocalDate;
 
-public class Customer {
+public class Customer implements Comparable<Customer> {
     private int custId;
     private String firstName;
     private String lastName;
@@ -11,13 +11,14 @@ public class Customer {
     private double registrationAmount;
     private LocalDate DOB;
     private String plan;
+    private LocalDate lastSubscriptionPaidDate; 
     private static int counter;
 
     static {
         counter = 1001;
     }
 
-    public Customer( String firstName, String lastName, String email, String password, double registrationAmount, LocalDate DOB, String plan) {
+    public Customer( String firstName, String lastName, String email, String password, double registrationAmount, LocalDate DOB, String plan,LocalDate lastSubscriptionPaidDate) {
         this.custId = counter++;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -26,6 +27,7 @@ public class Customer {
         this.registrationAmount = registrationAmount;
         this.DOB = DOB;
         this.plan = plan;
+        this.lastSubscriptionPaidDate=lastSubscriptionPaidDate;
     }
     public Customer(String email){
         this.email=email;
@@ -37,6 +39,12 @@ public class Customer {
 
     public int getCustId() {
         return this.custId;
+    }
+    public void setLastSubscriptionPaidDate(LocalDate lastSubscriptionPaidDate) {
+        this.lastSubscriptionPaidDate = lastSubscriptionPaidDate;
+    }
+    public LocalDate getLastSubscriptionPaidDate() {
+        return this.lastSubscriptionPaidDate;
     }
 
     public String getFirstName() {
@@ -114,6 +122,10 @@ public class Customer {
            return this.email.equals(((Customer)o).email);
         return false;
     }
-
+    
+    @Override
+    public int compareTo(Customer anotherCustomer){
+        return this.email.compareTo(anotherCustomer.email);
+    }
 
 }

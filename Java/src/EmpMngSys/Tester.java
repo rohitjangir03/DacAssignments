@@ -6,7 +6,7 @@ public class Tester {
         System.out.println(e.computeSalary());
         System.out.println(e.getClass()); // SalesMgr
         e = new Tempworker(); // 1 object (SalesMgr instance) marked for Garbage Collector
-        System.out.println(e.computeSalary());
+        System.out.println(e.computeSalary()); 
         System.out.println(e.getClass());// Tempworker
         Object ref;
         ref = e; // upcasting

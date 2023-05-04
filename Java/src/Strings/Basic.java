@@ -3,7 +3,7 @@ import java.util.Scanner;
 import static java.lang.System.*;
 public class Basic {
     public static void main(String[] args) {
-       /* Scanner sc = new Scanner(in);
+        Scanner sc = new Scanner(in);
          out.println("Enter String");
         String s = new String(sc.next());
        // converting String to char
@@ -29,15 +29,15 @@ public class Basic {
 
             String f = new String(ch);
             out.println(f);
-            sc.close(); */
+            sc.close(); 
             Integer i1 = Integer.valueOf(230); // boxing (primitive --> wrapper)
             out.println("i1:"+i1);    
             int data = i1.intValue();  // unboxing(wrapper --> primitive)
             out.println("data:"+data);     
             i1=12345;          //  autoboxing
             out.println("i1:"+i1);
-            String s = "123456";  
-            out.println(s);
+            String s4 = "123456";  
+            out.println(s4);
             i1++;   //autounboxing -->int (Increment++)--> autoboxing
             out.println("i1:"+i1);
             Double d1 = 123.456;  //autoboxing double --> Double
