@@ -18,7 +18,7 @@ public class data {
         customerData.add(validateAll("Suprit","Sharma","sup@123","su",2000,"2001-07-03","gold","2023-02-01",customerData));
         customerData.add(validateAll("Piyush","Meena","piy@123","pi",5000,"2001-07-03","diamond","2023-01-19",customerData));
         customerData.add(validateAll("Nishant","Jain","nis@123","ni",2000,"2000-05-12","gold","2023-04-10",customerData));
-        customerData.add(validateAll("Mohit","sid","moh@123","mo",1000,"1999-10-23","silver","2023-01-23",customerData));
+        customerData.add(validateAll("Mohit","sid","moh@123","mo",1000,"1999-10-23","silver","2022-12-23",customerData));
         customerData.add(validateAll("Sukumar","singh","suk@123","su",5000,"1998-04-03","diamond","2023-03-20",customerData));
         return customerData;
     } catch (Exception e) {

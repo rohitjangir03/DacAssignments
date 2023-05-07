@@ -1,5 +1,5 @@
 package AxisBank;
 
 public enum AccountType {
-    SAVINGS, DEMAT ,CURRENT
+    SAVINGS, DEMAT ,CURRENT ;
 }

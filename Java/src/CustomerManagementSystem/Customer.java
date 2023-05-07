@@ -40,12 +40,18 @@ public class Customer implements Comparable<Customer> {
     public int getCustId() {
         return this.custId;
     }
-    public void setLastSubscriptionPaidDate(LocalDate lastSubscriptionPaidDate) {
-        this.lastSubscriptionPaidDate = lastSubscriptionPaidDate;
+    public void setCustId(int custId) {
+        this.custId = custId;
     }
+
     public LocalDate getLastSubscriptionPaidDate() {
         return this.lastSubscriptionPaidDate;
     }
+
+    public void setLastSubscriptionPaidDate(LocalDate lastSubscriptionPaidDate) {
+        this.lastSubscriptionPaidDate = lastSubscriptionPaidDate;
+    }
+    
 
     public String getFirstName() {
         return this.firstName;
@@ -113,6 +119,7 @@ public class Customer implements Comparable<Customer> {
             ", registrationAmount='" + getRegistrationAmount() + "'" +
             ", DOB='" + getDOB() + "'" +
             ", plan='" + getPlan() + "'" +
+            ", SUbscriptionDate='" + getLastSubscriptionPaidDate() + "'" +
             "}";
     }
 

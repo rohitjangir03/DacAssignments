@@ -4,7 +4,6 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.List;
 
-
 public class validateDetails {
 
     public static Customer validateAll(String firstName, String lastName, String email, String password,
@@ -47,13 +46,13 @@ public class validateDetails {
         return DOB;
     }
     //add static method to validate if the subscription date time is more than 3 months or not
-    public static int validateSubscriptionDate(String date) throws custException{
-        LocalDate subsDate = LocalDate.parse(date);
-        int intervalMonths = (int)Period.between(subsDate, LocalDate.now()).toTotalMonths();
-        if(intervalMonths>3)
-             throw new custException("User subscribed ended");
+    public static void validateSubscriptionDate(LocalDate date) throws custException{
+        System.out.println(date);
+        float intervalMonths = Period.between(date, LocalDate.now()).toTotalMonths();
+        System.out.println(intervalMonths);
+        if(intervalMonths>3.0)
+             throw new custException("User subscribed ended,subcribe first ,");   
         System.out.println("having subscription ");
-        return intervalMonths;
     }
 
     // add static method for cusotmer signin
@@ -70,5 +69,6 @@ public class validateDetails {
             throw new custException("User not found , wrong input");
 
         return new Customer(email, password);
+        
     }
 }

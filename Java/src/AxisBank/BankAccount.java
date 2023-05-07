@@ -3,10 +3,10 @@ package AxisBank;
 public class BankAccount {
     private int AccId;
     private String customerName;
-    private String accountType;
+    private AccountType accountType;
     private double balance;
 
-    public BankAccount(int AccId, String customerName, String accountType, double balance) {
+    public BankAccount(int AccId, String customerName, AccountType accountType, double balance) {
         super();
         this.AccId = AccId;
         this.customerName = customerName;
@@ -14,45 +14,21 @@ public class BankAccount {
         this.balance = balance;
     }
 
-    public int getAccId() {
-        return this.AccId;
-    }
-
-    public void setAccId(int AccId) {
-        this.AccId = AccId;
-    }
-
-    public String getCustomerName() {
-        return this.customerName;
-    }
-
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
-    }
-
-    public String getAccountType() {
+    public AccountType getAccountType() {
         return this.accountType;
     }
 
-    public void setAccountType(String accountType) {
+    public void setAccountType(AccountType accountType) {
         this.accountType = accountType;
-    }
-
-    public double getBalance() {
-        return this.balance;
-    }
-
-    public void setBalance(double balance) {
-        this.balance = balance;
     }
 
     @Override
     public String toString() {
         return "{" +
-                " AccId='" + getAccId() + "'" +
-                ", customerName='" + getCustomerName() + "'" +
+                " AccId='" +this.AccId+ "'" +
+                ", customerName='" + this.customerName + "'" +
                 ", accountType='" + getAccountType() + "'" +
-                ", balance='" + getBalance() + "'" +
+                ", balance='" + this.balance + "'" +
                 "}";
     }
     @Override

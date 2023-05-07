@@ -28,9 +28,9 @@ public class custTester {
                     switch (sc.nextInt()) {
                         case 1:
                             System.out.println(
-                                    "Enter firstName, lastName, email, password , RegisterdAmount,DOB(yy-mm-dd), Plan ");
+                                    "Enter firstName, lastName, email, password , RegisterdAmount,DOB(yy-mm-dd), Plan,SusbcriptonDate ");
                             Customer validCustomr = validateAll(sc.next(), sc.next(), sc.next(), sc.next(),
-                                    sc.nextDouble(), sc.next(), sc.next(),sc.next(), custList);
+                                    sc.nextDouble(), sc.next(), sc.next(), sc.next(), custList);
                             custList.add(validCustomr); // to add valid customer after validation
                             System.out.println("Customer Added Succesfully");
                             break;
@@ -89,23 +89,26 @@ public class custTester {
                                 public int compare(Customer c1, Customer c2) {
                                     int in = c1.getDOB().compareTo(c2.getDOB());
                                     if (in == 0) {
-                                       /*  if (c1.getRegistrationAmount() < c2.getRegistrationAmount())
-                                            return -1;
-                                        if (c1.getRegistrationAmount() == c2.getRegistrationAmount())
-                                            return 0;
-                                        else
-                                            return 1; */
-                                        return ((Double)c1.getRegistrationAmount()).compareTo(c2.getRegistrationAmount());
+                                        /*
+                                         * if (c1.getRegistrationAmount() < c2.getRegistrationAmount())
+                                         * return -1;
+                                         * if (c1.getRegistrationAmount() == c2.getRegistrationAmount())
+                                         * return 0;
+                                         * else
+                                         * return 1;
+                                         */
+                                        return ((Double) c1.getRegistrationAmount())
+                                                .compareTo(c2.getRegistrationAmount());
                                     }
                                     return in;
                                 }
                             });
                             break;
-                        case 9: 
-                             System.out.println("Enter email id and password to login for paying the amount");
-                             validCustomr = customerLogin(sc.next(), sc.next(), custList);
-                                    
-                            break;
+                        case 9:
+                            System.out.println("Enter email id and password to login for paying the amount");
+                            validCustomr= customerLogin(sc.next(), sc.next(), custList);
+                            index= custList.indexOf(validCustomr);
+                            validateSubscriptionDate(custList.get(index).getLastSubscriptionPaidDate());
                         case 0:
                             exit = true;
                             break;
