@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "empTester",
+            "request": "launch",
+            "mainClass": "EmployeeManagementSystem.empTester",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
