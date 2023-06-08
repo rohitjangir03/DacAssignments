@@ -1,0 +1,168 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "empTester",
+            "request": "launch",
+            "mainClass": "EmployeeManagementSystem.empTester",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "abstTester",
+            "request": "launch",
+            "mainClass": "Abst_Interface_enum.abstTester",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
+            "name": "interTester",
+            "request": "launch",
+            "mainClass": "Abst_Interface_enum.interTester",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
+            "name": "tester",
+            "request": "launch",
+            "mainClass": "Abst_Interface_enum.tester",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
+            "name": "Tester",
+            "request": "launch",
+            "mainClass": "AxisBank.Tester",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
+            "name": "Tester(1)",
+            "request": "launch",
+            "mainClass": "BankAccount.Tester",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
+            "name": "custTester",
+            "request": "launch",
+            "mainClass": "CustomerManagementSystem.custTester",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
+            "name": "CustTester",
+            "request": "launch",
+            "mainClass": "CustomerValidate.CustTester",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
+            "name": "Tester(2)",
+            "request": "launch",
+            "mainClass": "EmpMngSys.Tester",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
+            "name": "enum_tester",
+            "request": "launch",
+            "mainClass": "Enums.enum_tester",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
+            "name": "Tester(3)",
+            "request": "launch",
+            "mainClass": "Exception_Handling.Tester",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
+            "name": "num1to5",
+            "request": "launch",
+            "mainClass": "Recursion.num1to5",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
+            "name": "Arraylst",
+            "request": "launch",
+            "mainClass": "Revision.Arraylst",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
+            "name": "enumTester",
+            "request": "launch",
+            "mainClass": "Revision.enumTester",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
+            "name": "vecote",
+            "request": "launch",
+            "mainClass": "Revision.vecote",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
+            "name": "mainPlant",
+            "request": "launch",
+            "mainClass": "Sparsh.mainPlant",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
+            "name": "Basic",
+            "request": "launch",
+            "mainClass": "Strings.Basic",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
+            "name": "L2ndOcc",
+            "request": "launch",
+            "mainClass": "Strings.L2ndOcc",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
+            "name": "ReverseString",
+            "request": "launch",
+            "mainClass": "Strings.ReverseString",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
+            "name": "ReverseWord",
+            "request": "launch",
+            "mainClass": "Strings.ReverseWord",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
+            "name": "stdmain",
+            "request": "launch",
+            "mainClass": "StudentDup.stdmain",
+            "projectName": "Demos-Java_f056ab7f"
+        },
+        {
+            "type": "java",
+            "name": "Tester(4)",
+            "request": "launch",
+            "mainClass": "inner_class.Tester",
+            "projectName": "Demos-Java_f056ab7f"
+        }
+    ]
+}
